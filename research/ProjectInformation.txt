@@ -1,0 +1,55 @@
+﻿Team Name: Chronies
+
+
+Description of team's "alternate dispute resolution" mechanism: If there is a disagreement in the team, the members who disagree will play a card game like Uno, and whoever wins first place wins the argument. 
+Person 1 Name: Mokshita Gupta
+Person 1 Email: mgupta8@buffalo.edu
+Person 1 Github: mokshitagupta
+
+
+Person 2 Name: Holliday Sims
+Person 2 Email: hesims@buffalo.edu
+Person 2 Github: hesims
+
+
+Person 3 Name: Tina Costanza
+Person 3 Email: accostan@buffalo.edu
+Person 3 Github: thoaria
+
+
+Person 4 Name: Samuel Kayutkin
+Person 4 Email: sjkayutk@buffalo.edu
+Person 4 Github: skayutkin29
+
+
+Person 5 Name: William Bizier
+Person 5 Email: wdbizier@buffalo.edu
+Person 5 Github: WilliamBizier
+
+
+Git Repo: https://github.com/cse442-at-ub/project-group-chronies 
+
+
+Project Info: 
+
+
+Web server or database: We will require both a web server and a database.
+
+
+In 1 - 2 paragraphs, describe the typical user(s) of your project were the project "fully completed" (and not just at the end of the term)
+
+
+* Our main audience would be digital media enthusiasts who are open to play into the common gag about certain media types being associated with antisocial behavior.
+* Our application requires some technological literacy from our intended users.  To populate our application with their past digital media consumption, users need to export the data from their accounts into our app. 
+* Our audience would be introverted users who wish to improve their socialization skills, and want to join a form of social media that revolves around media consumption.
+* Since the project will potentially track more than just the “Chronically Online” score of the user, people who are interested in self-improvement or habit analysis may also enjoy it.
+
+
+In 1 - 2 paragraphs, describe the typical uses of your project once it was "fully completed" (and not just at the end of the term).
+
+
+* The project will function as a “hobby tracker” that will allow users to import their data from existing apps such asTwitch, GoodReads, Youtube, LetterBoxd, Steam, etc. 
+* Moreover, they could track the media they are consuming from scratch as well.
+* Users can follow and see their friends’ ‘Chronically Online’ score and what media they’ve been consuming. There will also be an option to make what media you consume private or public to friends. 
+* One major aspect of the application would be that after a user logs a piece of media, their “Chronically Online” score and potentially other metrics like productivity, etc. will be updated accordingly. 
+* After a certain threshold of a metric, the user would be recommended activities based on the weather of the user’s location with the aim to socialize and decrease their ‘Chronically Online’ score. Accompanying the recommendations would be the suggested time they spend doing that specific activity a day and the benefits. The user is then given an option whether to participate in that activity (decreases their score) or to decline (increases their score).
