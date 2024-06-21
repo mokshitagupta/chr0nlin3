@@ -1,0 +1,218 @@
+/* mediaPage.css */
+.mediaPageContainer {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 20px;
+}
+
+.leftHalf {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.mediaTopSection {
+    display: flex;
+    background-color: #6200B3;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.mediaImage {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.mediaInfo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    color: #08B2E3;
+}
+
+.mediaInfoh2 {
+    font-size: 1.5rem;
+    color: white;
+    margin: 0;
+}
+
+.mediaInfop {
+    font-size: 1rem;
+    color: white;
+    margin: 5px 0;
+}
+
+.mediaInfo p.trackedBy {
+    font-style: italic;
+}
+
+.playButton {
+    background-color: #CA89FF;
+    color: #6200B3;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    font-weight: bold;
+}
+
+.playButton:hover {
+    background-color: #9141d1;
+    color: white; 
+ 
+}
+
+
+.mediaBottomSection {
+    background-color: rgb(168, 104, 160);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.mediaBottomSection{
+    font-size: 1.5rem;
+    margin-top: 0px;
+    background-color: #08B2E3;
+}
+
+.descriptionBox {
+    background-color: #4F0147; /* Added background color */
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 10px;
+    max-height: 32.8vh;
+}
+
+.descriptionTitle {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 0px;
+}
+
+.description {
+    font-size: 1rem;
+    margin-top: 10px;
+    overflow-y: scroll;
+    max-height: 80%;
+}
+
+.rightHalf {
+    flex: 1;
+    background-color: #4F0147;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 5%;
+    max-height: 83vh; /* You can adjust this value as needed */
+    /* Removed overflow-y and max-height properties */
+}
+
+.reviewsContainer {
+    /* Make the reviewsContainer scrollable instead of the entire rightHalf */
+    padding-bottom: 10px;
+    overflow-y: auto;
+    max-height: 90%;
+}
+
+.reviewTitle {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.75rem;
+    margin-top: 0px;
+}
+
+.review {
+    background-color: #6200B3;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.username {
+    color: #CA89FF;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin: 0;
+
+}
+
+.review p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+
+
+
+/* mediaPage.css */
+
+/* Your existing CSS rules... */
+
+/* Modified Media Query for Responsive Design */
+
+/* Modified Media Query for Responsive Design */
+@media (max-width: 750px) {
+    .mediaPageWrapper {
+      overflow-y: auto; /* Allows vertical scrolling of the entire page */
+    }
+  
+    .mediaPageContainer {
+      flex-direction: column;
+    }
+  
+    .leftHalf, .rightHalf {
+      margin-right: 0;
+      margin-bottom: 20px; /* Adds some spacing between sections */
+    }
+
+    .rightHalf{
+        flex: 1;
+        background-color: #4F0147;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 5%;
+        max-height: 83vh; /* You can adjust this value as needed */
+        /* Removed overflow-y and max-height properties */
+        }
+  
+    .mediaTopSection {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .mediaInfo {
+      text-align: center;
+    }
+  
+    /* Adjust the .reviewsContainer and .mediaBottomSection to fit the new layout */
+    .mediaBottomSection {
+      max-height: none; /* Resets the max height */
+      overflow-y: visible; /* Ensures content is visible without internal scrolling */
+    }
+
+    .reviewsContainer{
+        padding-bottom: 10px;
+        overflow-y: auto;
+        max-height: 40%;
+    }
+  
+    .descriptionTitle, .reviewTitle {
+      margin-top: 0; /* Align with banner */
+      background-color: inherit;
+      border-radius: 0;
+    }
+  }
+  
+  
+  
+  
+  

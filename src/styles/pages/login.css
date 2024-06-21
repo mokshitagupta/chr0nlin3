@@ -1,0 +1,104 @@
+@import url('../global.css');
+
+
+.couple-image {
+
+    overflow: hidden;
+    align-self: flex-end;
+    height: 90%;
+    width: 45%;
+    position: relative;
+    margin-top: 1%;
+    margin-left: 1%;
+
+}
+
+.user-pass-label{
+    color: var(--blue);
+    font-size: var(--big-font)
+}
+
+.user-pass-input{
+    font-size: var(--med-font);
+    padding-left: 5%;
+    font-family: var(--font);
+    color: var(--pink);
+    height: 4.5vh;
+    width: 96%;
+    -webkit-appearance: none;
+    outline: none;
+    border: none;
+    background-color: var(--panel-bg);
+    border-radius: 50px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+
+.login-button{
+    border-radius: 50px;
+    border: none;
+    background-color: var(--purple);
+    font-size: var(--big-font);
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 8%;
+    color: var(--blue);
+    padding: 2% 8%;
+    transition: background-color 0.2s ease;
+    margin-top: 3.5%;
+    
+
+}
+
+.forgot-pass{
+    text-align: center;
+    font-size: var(--med-font);
+    color: var(--pink);
+
+}
+
+
+.whatever {
+    float: right;
+}
+
+.login-form{
+    width: 35%;
+    margin-right: 12%;
+    margin-top: 5%;
+    margin-left: 5%
+}
+
+
+@media (max-width: 750px) {
+    .flex-banner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .couple-image {
+        width: 80%;
+        margin-top: 5%;
+        margin-bottom: 2.5%;
+        margin-left: 0;
+        align-self: center;
+        order: 2; /* Sets the image to render after the form */
+    }
+
+    .login-form {
+        width: 80%;
+        margin: 5% 0;
+        margin-left: 0;
+        order: 1; /* Ensures the form is rendered first */
+    }
+
+    .forgot-pass {
+        text-align: center;
+        font-size: var(--med-font);
+        color: var(--pink);
+        margin-left: 0;
+    }
+}

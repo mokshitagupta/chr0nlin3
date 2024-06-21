@@ -1,0 +1,73 @@
+@import url('../global.css');
+
+.will-fixed {
+    position: fixed;
+    height: 100vh; /* Full height of the viewport */
+    width: 100%; /* Full width */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* No scrolling */
+}
+
+.will-feedpage {
+    display: flex;
+    flex-grow: 1; /* Allow this container to grow and take available space */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.will-feed {
+    margin-top: 12vh;
+    width: 100%; /* Adjusted for 100% width */
+    background-color: transparent;
+    position: relative; /* Change to relative */
+}
+
+.will-feed-container{
+    background-color: var(--panel-bg) !important;
+    border-radius: 50px;
+    width: 100%;
+    height: 100vh;
+    margin-left: 8%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+}
+
+.will-feed-contents{
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    padding-bottom: 20vh;
+}
+
+.will-layout {
+    display: flex;
+    width: 100%;
+}
+
+.will-tabs {
+    width: 35%; /* 35% width for tabs */
+    order: 2; /* Default order */
+    /* Additional styling as needed */
+}
+
+.will-feed {
+    width: 65%; /* 65% width for feed */
+    order: 1; /* Default order */
+    /* No changes needed here */
+}
+
+@media (max-width: 750px) {
+    .will-tabs, .will-feed {
+        width: 90%; /* 100% width minus margins */
+        margin: 5%; /* 5% margin on each side */
+    }
+
+    .will-tabs {
+        order: 1; /* Tabs on top */
+    }
+
+    .will-feed {
+        order: 2; /* Feed below tabs */
+    }
+}

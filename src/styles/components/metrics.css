@@ -1,0 +1,112 @@
+@import url('../global.css');
+
+
+
+.logSearchResults {
+    position: absolute;
+    top: 45%; /* Align the top of the dropdown with the bottom of the input field */
+    left: 5%;
+    width: 50%; /* Match the width of the input field, adjust as needed */
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: rgb(168, 104, 160);
+    border-radius: 20px;
+    padding: 10px;
+    z-index: 10000; /* Ensure a very high z-index */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25); /* Adds a shadow for depth */
+}
+
+/* Optional: Additional style for the search result items */
+.logSearchResultItem {
+    padding: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border: 1px;
+    color: white; 
+    border: 2px solid white; /* Darker purple border */
+    border-radius: 15px; /* Rounded corners */
+    margin-bottom: 6px;
+}
+
+.logSearchResultItem:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.ok {
+    border-radius: 10px;
+    border:none;
+    background-color: var(--purple);
+    font-size: var(--med-font);
+    width: 30%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 15%;
+    color: var(--blue);
+    transition: background-color 0.2s ease;
+}
+
+.cancel{
+    border-radius: 10px;
+    border:none;
+    background: var(--red);
+    font-size: var(--med-font);
+    width: 30%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 15%;
+    color: var(--white);
+    transition: background-color 0.2s ease;
+
+}
+
+.modalContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  
+.modalContent {
+    display: flex;
+    flex-direction: row;
+    height: 10%;
+}
+
+
+.modalButton {
+justify-content: center;
+align-items: center;
+}
+
+.modalButtonStyle {
+border-radius: 10px;
+border:none;
+background-color: var(--purple);
+font-size: var(--med-font);
+width: 13%;
+text-align: center;
+display: flex;
+justify-content: center;
+height: 8%;
+color: var(--blue);
+transition: background-color 0.2s ease;
+}
+
+
+.ant-modal-body{
+    height:100%;
+
+}
+
+@media (max-width: 750px) {
+
+    .cancel{
+        width: 50%;
+    }
+
+    .ok {
+        width: 50%; 
+    }
+
+
+}

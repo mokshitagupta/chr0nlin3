@@ -1,0 +1,234 @@
+@import url('../global.css');
+
+
+
+.will-metric-container{
+    display: flex !important; /* Use flexbox for horizontal layout */
+    flex-direction: row !important; /* Set columns to align horizontally */
+    height: auto; /* Height adjusts to content */
+    position: relative !important;
+    background-color: #3D0036 !important;
+    border-radius: 50px !important;
+    font-size: bold !important;
+    color: white !important;
+
+}
+
+.will-metric-col1, .will-metric-col2, .will-metric-col3 {
+    height: auto; /* Adjust height to content */
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+
+}
+
+
+
+.will-metric-col1{
+    padding: 2% 2% !important;
+    height: 100% !important; /* Adjusted to auto to fit content */
+    width: 40% !important;
+    background-color: transparent !important;
+    display: flex !important;
+    flex-direction: column !important; /* Stacks children vertically */
+    align-items: center; /* Centers children horizontally */
+}
+
+
+    .will-co-container{
+        width: 100%;
+        margin-bottom: 4%;
+        background-color: transparent;
+
+    }
+
+    .will-rating-container{
+        width: 100% !important;
+        background-color: transparent;
+
+    }
+
+.will-metric-col2{
+    padding: 2% 2% !important;
+    height: 90% !important;
+    width: 30% !important;
+    background-color: transparent !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+
+}
+
+    .wil-tracking-container{
+        height: 90%;
+
+    }
+
+    .will-log-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        width: 100%;
+        text-align: center;
+
+    }
+.will-metric-col3{
+    padding: 2% !important;
+    height: 90% !important;
+    width: 20% !important;
+    background-color: transparent !important;
+
+}
+    .grass-container{
+        height: 100%;
+
+    }
+
+
+
+.will-transparent{
+    background-color: transparent;
+    
+
+}
+
+.will-starts-cont{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 0;
+    align-items: center;
+
+}
+
+
+.will-grass-cont{
+    height: 100% !important;
+}
+
+/* MY EYES HAVE SEEN THE GLORY OF THE COMING OF THE LORD */
+
+
+
+/* column 1: Chronically Online Score; */
+
+.will-blue {
+    color: var(--blue);
+}
+
+.will-co-heading {
+    width: 100%;
+    font-size: var(--big-font);
+    margin: 0;
+    text-align: center;
+    background-color: transparent;
+    margin-bottom: 5px;
+}
+
+.will-meter-bg {
+    position: relative;
+    width: 100%;
+    height: auto;
+    align-self: center;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    background-color: #6200B3;
+    border-radius: 20px;
+}
+
+.will-meter-img {
+    margin-top: 5% !important;
+    width: 60%; /* Make meter image scale with its container */
+    height: auto;
+}
+
+.will-needle {
+    position: absolute;
+    top: 20%;
+    left: 60%;
+    width: auto; /* Adjust as needed */
+    height: 50%;
+}
+
+.will-co-body {
+    font-size: var(--big-font);
+    color: var(--pink);
+    font-weight: bold;
+    text-align: center;
+    width: 100%; /* Full width of the parent container */
+
+}
+
+/* column 1: your average ratings NBA YOUNG BOY*/
+
+
+
+
+/* column 2: Tracking Hisotry Graph; */
+
+/* column 2: Log Media */
+
+/* column 3: Touched Gras bar ; */
+
+
+
+
+
+
+
+
+
+@media (max-width: 750px) {
+    .will-metric-container {
+        flex-direction: column !important; /* Stack columns vertically */
+        align-items: stretch !important; /* Stretch children to full width */
+        
+        padding-left: 7% !important;
+        padding-right: 7% !important;
+        padding-top: 7% !important;
+        padding-bottom: 7% !important;
+
+
+        
+
+    }
+
+    .will-metric-col1, .will-metric-col2, .will-metric-col3, .will-cols {
+        width: 100% !important; /* Full width for mobile view */
+     
+    }
+
+    /* Adjust child containers for mobile layout */
+    .will-co-container, .will-rating-container, .will-tracking-container, .will-log-container, .grass-container {
+        width: 100%; /* Full width for child elements */
+        margin: 2.5%;
+    }
+
+
+    .will-meter-bg{
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+
+
+    .will-meter-img {
+        width: 100%; /* Make meter image scale with its container */
+        height: auto;
+    }
+
+    .will-needle {
+        position: absolute;
+        top: 22%;
+        left: 65%;
+        transform: translate(-50%, -50%); /* Center the needle over the meter */
+        width: 12%; /* Adjust as needed */
+        height: auto;
+    }
+    /* Additional adjustments for other elements as needed */
+}

@@ -1,0 +1,59 @@
+@import url('../global.css');
+
+/* Base styles */
+.will-mobile-container {
+    overflow-y: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.will-pg-content {
+    display: flex;
+    margin-top: 5%;
+    margin-bottom: 7%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    flex-wrap: wrap;
+
+}
+
+/* Profile and Metrics section */
+.will-pfp-section {
+    flex: 1 0 20%; /* 25% of the container's width */
+    box-sizing: border-box; /* Include padding and borders in the element's width */
+}
+
+.will-metrics {
+    box-sizing: border-box;
+}
+
+/* In-Progress and Completed sections */
+.will-lineup {
+    flex: 1 0 50%; /* 50% of the container's width */
+    height: 50%;
+    box-sizing: border-box;
+}
+
+/* Mobile View */
+@media (max-width: 750px) {
+    .will-metrics, .will-lineup {
+        flex-basis: 100%; /* Each section takes the full width */
+    }
+
+    .will-pfp-section {
+        margin: 5%;
+        width: 100%;
+
+    }
+    
+    .will-metrics{
+
+
+    }
+    
+    .will-lineup{
+        margin: 5%;
+
+
+    }
+}

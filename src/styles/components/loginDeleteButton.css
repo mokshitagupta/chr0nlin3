@@ -1,0 +1,41 @@
+@import url('../global.css');
+
+.will-logout-btn {
+    background-color: var(--purple);
+    color: var(--pink);
+}
+
+.will-delete-btn{
+    background-color: var(--red);
+    color: var(--white);
+  }
+  
+.will-logout-delete-btns {
+    border-radius: 50px;
+
+
+    width: 100%;
+    padding: 5px;
+    margin: 10px;
+
+
+
+
+    transition: background-color 0.2s ease;
+    font-size: 2em; /* Changed from 1.5vw to em for better scalability */
+    text-align: center;
+    box-shadow: 0 2px 4px rgb(0, 0, 0.25);
+    font-weight: bold;
+    white-space: nowrap; /* Prevents text from wrapping */
+    overflow: hidden; /* Hides text that overflows the button's boundaries */
+    text-overflow: ellipsis; /* Adds an ellipsis to text that overflows */
+}
+
+.will-delete-btn:hover{
+
+    background-color: hsl(356, 59%, 64%);
+}
+
+.will-logout-btn:hover{
+    background-color: #843ac0;
+}

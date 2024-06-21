@@ -1,0 +1,87 @@
+@import url('../global.css');
+
+
+.will-fixed {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.will-error404-img {
+    width: 50%;
+    height: 50%;
+    /* max-height: 800px;
+    max-width: 800px; */
+}
+
+.will-error404-message-container {
+    margin-top: 10%;
+    /* margin-left: 20%;
+    margin-right: 20%; */
+    position: fixed;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}  
+
+.will-error404-message {
+    font-size: var(--med-font);
+    color: white; 
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.will-dashboard-btn {
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    border-radius: 50px;
+    border:none;
+    background-color: var(--purple);
+    font-size: var(--med-font);
+    width: 120%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 8%;
+    color: var(--blue);
+    padding: 8% 8%;
+    transition: background-color 0.2s ease;
+    margin-bottom: 5%;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(119, 28, 133);
+  }
+
+
+/* Responsive design for screens less than 750px wide */
+@media (max-width: 750px) {
+
+    .will-error404-message-container {
+        margin-left: 5%;
+        margin-right: 5%;
+        position: fixed;
+        width: 90%;
+    }
+
+    .will-error404-img {
+        transform: translate(0%, 0%);
+        top: 50%; /* Position the top edge of the image at the center of the container */
+        left: 50%; /* Position the left edge of the image at the center of the container */
+        width: 90%;
+        height: 90%;
+        
+    }
+   
+}
+
+
+

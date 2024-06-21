@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+:root{
+  --bg:#290024;
+  --panel-bg:#8a0791;
+  /* 6c2364 */
+  --white:#FFFFFF;
+  --pink:#CA89FF;
+  --blue:#08B2E3;
+  --purple:#6200b3 ;
+  --red: #D93551;
+  --green: #34C177;
+  --swirl-gray:#2D2A25;
+  --orange:#FA704E;
+  --font : "Roboto Mono";
+
+
+  /* --large-font: 28px;
+  --big-font: 24px;
+  --med-font: 18px;
+  --small-font: 14px; */
+
+  --large-font: clamp(1.2rem, 3vw, 1.5rem);
+  --big-font: clamp(1.2rem, 2.5vw, 1.5rem);
+  --med-font: clamp(1.1rem, 2vw, 1.1rem);
+  --small-font: clamp(0.8rem, 1vw, 0.9rem);
+}
